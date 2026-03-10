@@ -1,0 +1,15 @@
+def roll_dice():
+    return randint(1, 6)
+
+
+def generate_target_number(lower_limit=17, upper_limit=29):
+    return randint(lower_limit, upper_limit)
+
+
+if __name__ == '__main__':
+    target_number = generate_target_number()
+
+    print(f'Target number: {target_number}')
+    print()
+
+    total = 0
